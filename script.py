@@ -5,6 +5,7 @@ import seaborn as sns
 df = pd.read_csv('WorldCupMatches.csv')
 print(df.head())
 
+# Total Goals Scored
 df['Total Goals'] = df['Home Team Goals'] + df['Away Team Goals']
 print(df['Total Goals'].head())
 
